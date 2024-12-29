@@ -64,3 +64,17 @@ body {
         opacity: 0;
     }
 }
+
+#hanging{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; 
+}
+
+#sat {
+    position:absolute;
+    bottom: 0;
+    right:0;
+    width:20%;
+}
