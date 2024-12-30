@@ -3,10 +3,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background: #28420d;
     font-family:Verdana;
     color:rgb(255, 255, 255);
+    min-height: 100vh;
+    overflow-y: scroll;
 }
 
 .pad {
@@ -14,6 +15,16 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+}
+
+#one-page{
+    min-height: 100vh;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .box {
@@ -79,6 +90,28 @@ body {
 }
 
 .footer {
+    position: relative;
+    bottom:0;
+}
+.horizontal-scroll-container {
+    width: 50%; 
+    overflow-x: auto;
+    white-space: nowrap; 
+}
+
+.thing {
+    display: inline-block; 
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+#bottom {
     position: absolute;
     bottom:0;
 }
