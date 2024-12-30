@@ -12,7 +12,6 @@ const soundMap = {
     "kick": "sounds/kick.wav",
     "church-bell": "sounds/church-bell.mp3"
 };
-
 function play(link) {
     let audio = new Audio(link);
     audio.load();
@@ -40,8 +39,7 @@ const keyMap = {
     "v": "stick-hit",
     "b": "kick",
     "n": "church-bell"
-};
-    
+};  
 const keyPress = (event) => {
     const boxId = keyMap[event.key.toLowerCase()]; // to catch capslock or shift
     if (boxId) {
@@ -65,10 +63,7 @@ function createSnowflake() {
     const snowflake = document.createElement("div");
     snowflake.classList.add("snowflake");
     snowflake.innerHTML = "❄";
-
     snowflake.style.left = `${Math.random() * 100}%`;
-
     document.body.appendChild(snowflake);
-
     setTimeout(() => snowflake.remove(), 2000);
 }
